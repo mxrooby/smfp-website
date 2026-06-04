@@ -63,7 +63,7 @@ export const HeroCarousel = ({ onSearch }: HeroCarouselProps) => {
                   <Input
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Search..."
+                    placeholder="Search components, CPUs, GPUs…"
                     className="w-full h-12 pl-12 pr-20 text-foreground bg-background border-border rounded-lg focus:ring-2 focus:ring-primary/50"
                   />
                   <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
