@@ -24,15 +24,16 @@ export const Footer = () => {
                 <img 
                   src="/smfp-logo.png" 
                   alt="SMFP Logo" 
-                  className="w-8 h-8 object-contain" 
+                  className="w-12 h-12 object-contain" 
                 />
-                <span className="font-heading font-bold text-xl gradient-text">SMFP Computer</span>
+                <span className="font-heading font-bold text-xl gradient-text">SMFP Computer Trading</span>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Your trusted partner for premium PC components and expert build guidance. 
-                Experience the future of PC building with our AR visualization tools.
+                Your trusted source for premium PC components, custom PC builds,
+                and expert technical support. Helping gamers, students, and
+                professionals build with confidence.
               </p>
-              <div className="flex space-x-4">
+              <div className="flex items-center space-x-5">
                 <a
                   href="https://www.facebook.com/smfp.compstore"
                   target="_blank"
@@ -41,6 +42,22 @@ export const Footer = () => {
                   aria-label="Facebook"
                 >
                   <Facebook className="w-5 h-5" />
+                </a>
+              
+                <a
+                  href="tel:09498837098"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Phone"
+                >
+                  <Phone className="w-5 h-5" />
+                </a>
+              
+                <a
+                  href="mailto:sherlopilarco@yahoo.com"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Email"
+                >
+                  <Mail className="w-5 h-5" />
                 </a>
               </div>
             </div>
@@ -111,7 +128,7 @@ export const Footer = () => {
             style={rightSection.style}
           >
             <h3 className="font-heading font-semibold text-lg text-foreground">Find Us</h3>
-            <div className="w-full h-80 rounded-lg overflow-hidden border border-border/50 bg-card">
+            <div className="w-full h-80 rounded-lg overflow-hidden border border-border/50 bg-card transition-all duration-300 hover:border-primary/50"
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15444.034142504954!2d120.9894480474745!3d14.59858943260928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9d3a69e2de5%3A0x34e0eebaa4d9c4e7!2sSMFP%20Computer!5e0!3m2!1sen!2sph!4v1761070638099!5m2!1sen!2sph"
                 width="100%"
@@ -121,7 +138,7 @@ export const Footer = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-lg"
-                title="SMFP Computer Location"
+                title="SMFP Computer Trading Location"
               />
             </div>
             <p className="text-sm text-muted-foreground">
