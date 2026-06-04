@@ -25,20 +25,24 @@ export const Navigation = ({ onSectionClick }: NavigationProps) => {
     if (!isHomePage) return;
 
     const handleScroll = () => {
-      const sections = ['home', 'products', 'faqs', 'contact'];
-      const scrollPosition = window.scrollY + 100;
-
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section);
-            break;
-          }
+    const sections = ['home', 'products', 'faqs', 'contact'];
+  
+    let currentSection = 'home';
+  
+    sections.forEach((section) => {
+      const element = document.getElementById(section);
+  
+      if (element) {
+        const rect = element.getBoundingClientRect();
+  
+        if (rect.top <= window.innerHeight / 3) {
+          currentSection = section;
         }
       }
-    };
+    });
+  
+    setActiveSection(currentSection);
+  };
 
     window.addEventListener('scroll', handleScroll);
     handleScroll();
