@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Cpu, Mail, Phone, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook } from 'lucide-react';
 import { useScrollFadeIn, useScrollSlideIn } from '@/hooks/useScrollAnimation';
 
 export const Footer = () => {
@@ -33,14 +33,14 @@ export const Footer = () => {
                 Experience the future of PC building with our AR visualization tools.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="https://www.facebook.com/smfp.compstore"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Facebook"
+                >
                   <Facebook className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Twitter className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Instagram className="w-5 h-5" />
                 </a>
               </div>
             </div>
@@ -137,7 +137,7 @@ export const Footer = () => {
           style={bottomBar.style}
         >
           <p className="text-muted-foreground text-sm">
-            © 2024 SMFP Computer Trading. All rights reserved.
+            © {new Date().getFullYear()} SMFP Computer Trading. All rights reserved.
           </p>
         </div>
       </div>
